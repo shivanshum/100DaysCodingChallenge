@@ -1,3 +1,5 @@
+
+/* Doesn't work for all the test caseses Segmentation Fault Error :  
 #include<iostream>
 using namespace std;
 #include<vector>
@@ -38,3 +40,4 @@ int main(){
 	 printArray(a,size);
 	return 0;
 }
+*/
