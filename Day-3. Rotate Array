@@ -11,6 +11,7 @@ void printArray(int a[],int size){
 	cout << "\n";
 }
 
+//1st approach
 void rotateArray(int a[], int n, int d){
 	int temp[n];
     	int j = 0;
@@ -39,4 +40,31 @@ int main(){
 	 printArray(a,size);
 	return 0;
 }
+*/
+
+
+/*
+//this gives TLE
+//2nd approach to cyclically rotate on by one
+
+//rotating array one by one
+	void rotateArr(int a[], int d, int n){
+        //rotating array one by one
+    	int k = 0;
+    	while(k++ < d){
+    		int temp = a[0];
+    		int i = 0;
+    		for(; i<n-1; i++){
+    			a[i] = a[i+1];
+    		}
+    		a[i] = temp;
+    	}
+    }
+
+*/
+
+
+/*
+//3rd approach juggling alogrithm
+
 */
