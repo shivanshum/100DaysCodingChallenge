@@ -1,0 +1,70 @@
+
+/* Doesn't work for all the test caseses Segmentation Fault Error :  
+#include<iostream>
+using namespace std;
+#include<vector>
+
+void printArray(int a[],int size){
+	for(int i = 0; i<size; i++){
+		cout << a[i] << " ";
+	}
+	cout << "\n";
+}
+
+//1st approach
+void rotateArray(int a[], int n, int d){
+	int temp[n];
+    	int j = 0;
+    	for(int i = d; i<n; i++){
+    		temp[j++] = a[i];
+    	}
+    
+    	for(int i = 0; i<d; i++){
+    		temp[j++] = a[i];
+    	}
+    
+    	for(int i = 0; i<n; i++){
+    		a[i] = temp[i];
+    	}
+}
+
+int main(){
+	int a[] = {1,2,3,4,5};
+	int size = sizeof(a)/sizeof(a[0]);
+	cout << "Enter d : " << endl;
+	int d;
+	cin >> d;
+	
+	rotateArray(a,size,d);
+
+	 printArray(a,size);
+	return 0;
+}
+*/
+
+
+/*
+//this gives TLE
+//2nd approach to cyclically rotate on by one
+
+//rotating array one by one
+	void rotateArr(int a[], int d, int n){
+        //rotating array one by one
+    	int k = 0;
+    	while(k++ < d){
+    		int temp = a[0];
+    		int i = 0;
+    		for(; i<n-1; i++){
+    			a[i] = a[i+1];
+    		}
+    		a[i] = temp;
+    	}
+    }
+
+*/
+
+
+/*
+//3rd approach juggling alogrithm
+
+*/
